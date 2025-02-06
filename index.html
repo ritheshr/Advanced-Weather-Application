@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> WEATHER REPORT APPLICATION</h1>
+    <img id="background-image" src="images/front page.jpg" alt="Weather Background" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+
+    <div class="app">
+        <div class="search-box">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+            <button onclick="getLocationWeather()">📍</button>
+        </div>
+        
+        <div class="weather-info">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="cloudy.png" alt="Weather Icon">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+        
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-container" id="forecast-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

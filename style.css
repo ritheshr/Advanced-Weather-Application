@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    transition: background 0.5s ease-in-out;
+}
+/* CSS to center the h1 element */
+h1 {
+    text-align: center; /* Center the text horizontally */
+    margin: 0;         /* Remove default margin */
+    padding: 20px;     /* Add some padding for spacing */
+    font-size: 2.5em;  /* Adjust font size as needed */
+    color: #333;       /* Change text color */
+    font-family: Arial, sans-serif; /* Change font family */
+}
+
+
+.app {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease-in-out;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.search-box button:hover {
+    transform: scale(1.1);
+}
+
+.weather-info {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.weather-info img {
+    width: 80px;
+}
+
+.forecast {
+    margin-top: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.forecast-day {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
