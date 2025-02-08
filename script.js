@@ -94,8 +94,8 @@ function updateBackground(data) {
         backgroundImage = '/images/dark img.jpg'; // Replace with your actual path
     } else if (data.weather[0].main === "Mist") {
         backgroundImage = '/images/mist.jpg'; // Replace with your actual path
-    } else if (data.weather[0].main === "Mist") {
-        backgroundImage = '/images/mist.jpg';
+    } else if (data.weather[0].main === "Haze") {
+        backgroundImage = '/images/hazy.jpg';
     }
     else if (data.weather[0].main === "Clear") {
         backgroundImage = currentTime >= sunrise && currentTime <= sunset ? 
